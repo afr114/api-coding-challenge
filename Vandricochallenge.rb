@@ -35,7 +35,7 @@ end
 
 def answer_logic
   @iMid = ((@iMax-@iMin)/2) + @iMin
-  @num = iMid
+  @num = @iMid
   set_guess(@num)
   make_guess
   if @response == "too high"
