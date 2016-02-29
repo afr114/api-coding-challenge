@@ -14,7 +14,7 @@ def set_guess(num)
 end
 
 def make_guess
-  request = RestClient.post "http://52.8.142.239:8080/guess", guess.to_json, :content_type => :json, :accept => :json
+  request = RestClient.post "http://52.8.142.239:8080/guess", @guess.to_json, :content_type => :json, :accept => :json
   parse_request(request)
 end
 
